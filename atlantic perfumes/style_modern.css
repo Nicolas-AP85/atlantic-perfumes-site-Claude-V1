@@ -283,6 +283,44 @@ a {
     color: var(--black);
 }
 
+/* Practical info (price / payment) */
+.practical-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 40rem;
+    margin: 0 auto 4rem;
+}
+
+.practical-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--card-dark), var(--card-darker));
+    border: 1px solid rgba(202, 138, 4, 0.3);
+    border-radius: 1rem;
+    padding: 1.1rem 1.75rem;
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.08);
+}
+
+.practical-item .icon-badge {
+    flex-shrink: 0;
+}
+
+.practical-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--gray-400);
+}
+
+.practical-value {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
 /* Concept gallery */
 .concept-gallery {
     max-width: 56rem;
@@ -351,6 +389,13 @@ a {
 
 .feature h3 {
     font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 0.95rem;
+    color: var(--gray-400);
+    margin: 0;
 }
 
 /* Map */
@@ -504,6 +549,20 @@ a {
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
+}
+
+.offer-highlight {
+    background: rgba(234, 179, 8, 0.08);
+    border: 1px solid rgba(202, 138, 4, 0.4);
+    border-radius: 0.75rem;
+    padding: 0.9rem 1rem;
+    margin: -0.2rem -0.2rem 0.4rem;
+}
+
+.offer-highlight span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--white);
 }
 
 .offer-list svg {

@@ -12,7 +12,7 @@ if (contactForm) {
 
         try {
             const response = await fetch(
-                'https://formsubmit.co/ajax/atlantic.perfumes1@gmail.com',
+                'https://formsubmit.co/ajax/contact@atlantic-perfumes.com',
                 {
                     method: 'POST',
                     headers: { Accept: 'application/json' },
@@ -26,7 +26,7 @@ if (contactForm) {
             statusEl.textContent = 'Merci, votre demande a bien été envoyée. Nous vous recontactons rapidement.';
             statusEl.classList.add('success');
         } catch (error) {
-            statusEl.textContent = "Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous écrire directement à atlantic.perfumes1@gmail.com.";
+            statusEl.textContent = "Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous écrire directement à contact@atlantic-perfumes.com.";
             statusEl.classList.add('error');
         } finally {
             submitBtn.disabled = false;
